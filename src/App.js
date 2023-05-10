@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import Navbar from './Components/NavBar'
 import News from './Components/News'
-import LoadingBar from 'react-top-loading-bar'
+// import LoadingBar from 'react-top-loading-bar'
 import{
   Routes,
   Route,
@@ -17,9 +17,9 @@ const App=()=> {
    
     return (
       <div>
-       <LoadingBar height={3}
-       color='#f11946'
-       progress={progress}/>
+//        <LoadingBar height={3}
+//        color='#f11946'
+//        progress={progress}/>
         <Navbar/>
         <Routes>
           <Route path="/" element={< News setProgress={setProgress}   key='general' pageSize={pageSize} country="in" category="general"/>}></Route>
